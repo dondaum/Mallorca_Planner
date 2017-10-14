@@ -1,0 +1,31 @@
+<h1>Reservierungen</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Start date</th>
+      <th>End date</th>
+      <th>Comment</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @reservations.each do |reservation| %>
+      <tr>
+        <td><%= reservation.title %></td>
+        <td><%= reservation.start_date %></td>
+        <td><%= reservation.end_date %></td>
+        <td><%= reservation.comment %></td>
+        <td><%= link_to 'Anzeigen', reservation %></td>
+        <td><%= link_to 'Bearbeiten', edit_reservation_path(reservation) %></td>
+        <td><%= link_to 'Löschen', reservation, method: :delete, data: { confirm: 'Bist du sicher?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Neue Reservierung', new_reservation_path, :class => "waves-effect waves-light btn-large" %>
