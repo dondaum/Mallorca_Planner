@@ -1,4 +1,4 @@
 <% flash.each do |message_type, message| %>
 <!--  <div class="alert alert-<%= message_type %>"><%= message %></div> -->
-   <%= javascript_tag "Materialize.toast('#{message}', 4000)" %>
+   <%= javascript_tag "Materialize.toast('#{message}', 4000, blue)" %>
 <% end %>

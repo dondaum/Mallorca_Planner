@@ -1,6 +1,9 @@
-<h1>Reservierung bearbeiten</h1>
+  <h2>Reservierung bearbeiten</h2>
+    <div class "container" id ="main">
+      <div class="row">
+        <%= render 'form', reservation: @reservation %>
 
-<%= render 'form', reservation: @reservation %>
-
-<%= link_to 'Anzeigen', @reservation %> |
-<%= link_to 'Zurück', reservations_path %>
+        <%= link_to 'Anzeigen', @reservation %> |
+        <%= link_to 'Zurück', reservations_path %>
+      </div>
+    </div>

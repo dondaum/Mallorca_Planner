@@ -1,24 +1,25 @@
-<% @reservations.each do |reservation| %>
-  <div class="row">
-    <div class="col s12 m6">
-      <div class="card light-blue">
-        <div class="card-content white-text">
-          <span class="card-title"><%= reservation.title %></span>
-          <p>Von: <%= reservation.start_date.strftime('%d.%m.%Y') %> </p>
-          <p>Bis:  <%= reservation.end_date.strftime('%d.%m.%Y') %>  </p>
-          <p>Kommentar: <%= truncate(reservation.comment, length: 64) %>
-        </div>
-        <div class="card-action">
-          <%= link_to 'Anzeigen', reservation %>
-          <%= link_to 'Bearbeiten', edit_reservation_path(reservation) %>
-          <%= link_to 'Löschen', reservation, method: :delete, data: { confirm: 'Bist du sicher?' } %>
+<div class="center-align">
+  <h2>Alle Reservierungen</h2>
+<div class "container" id ="main">
+    <div class="row">
+      <% @reservations.each do |reservation| %>
+      <div class="col s6">
+        <div class="card">
+          <div class="card-image">
+            <img src="https://static.pexels.com/photos/386025/pexels-photo-386025.jpeg">
+            <span class="card-title"><%= truncate(reservation.title, length: 25) %></span>
+            <%= link_to '<i class="material-icons">add</i>'.html_safe, reservation, :class => "btn-floating halfway-fab waves-effect waves-light red" %>
+          </div>
+          <div class="card-content">
+            <p><%= truncate(reservation.comment, length: 64) %></p>
+          </div>
+          <div class="card-action">
+            <%= link_to 'Anzeigen', reservation %>
+            <%= link_to 'Bearbeiten', edit_reservation_path(reservation) %>
+            <%= link_to 'Löschen', reservation, method: :delete, data: { confirm: 'Bist du sicher?' } %>
+          </div>
         </div>
       </div>
+      <% end %>
     </div>
-  </div>
-  <div class="divider"></div>
-  <div class="section">
-    <h5><%= reservation.title %></h5>
-  </div>
-<% end %>
-<%= link_to 'Neue Reservierung', new_reservation_path, :class => "waves-effect waves-light btn-large" %>
+</div>

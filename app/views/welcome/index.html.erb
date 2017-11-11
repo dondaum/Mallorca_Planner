@@ -1,6 +1,9 @@
 <div class="hero-section">
-  <div class="d iv jo offset-m3 ci">
-    Gi
-    <a class="waves-effect waves-light btn-large"><i class="material-icons right">cloud</i>button</a>
-  </div>
+  <div class="container">
+      <div class="jumbotron" id="tagline">
+        <h3>Auch Helden brauchen Urlaub</h3>
+        <%= link_to 'Neue Reservierung', new_reservation_path, :class => "waves-effect waves-light btn-large" %>
+        <p><%= link_to 'Alle Reservierungen', reservations_path %></p>
+      </div>
+    </div>
 </div>

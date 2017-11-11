@@ -31,4 +31,9 @@ $( document ).on('turbolinks:load', function() {
 
   $(".button-collapse").sideNav();
 
+  $('#something').click(function(){
+      Materialize.toast('Pump it up hard!', 3000, 'rounded')
+  });
+
+
 });

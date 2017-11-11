@@ -1,38 +1,42 @@
-<%= form_for @reservation do|form| %>
-  <% if reservation.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(reservation.errors.count, "error") %> prohibited this reservation from being saved:</h2>
+  <div class "container" id ="main">
+    <div class="row">
+    <%= form_for @reservation do|form| %>
+      <% if reservation.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(reservation.errors.count, "error") %> prohibited this reservation from being saved:</h2>
 
-      <ul>
-      <% reservation.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
+          <ul>
+          <% reservation.errors.full_messages.each do |message| %>
+            <li><%= message %></li>
+          <% end %>
+          </ul>
+        </div>
       <% end %>
-      </ul>
-    </div>
-  <% end %>
 
 
-  <div class="field">
-    <%= form.label :Titel %>
-    <%= form.text_field :title, id: :reservation_title, class: "form-control" %>
+      <div class="field">
+        <%= form.label :Titel %>
+        <%= form.text_field :title, id: :reservation_title, class: "form-control" %>
+      </div>
+
+      <div class="field">
+        <%= form.label :Von %>
+        <%= form.text_field :start_date, id: :reservation_start_date, class: :datepicker %>
+      </div>
+
+      <div class="field">
+        <%= form.label :Bis %>
+        <%= form.text_field :end_date, id: :reservation_end_date, class: :datepicker %>
+      </div>
+
+      <div class="field">
+        <%= form.label :Kommentar %>
+        <%= form.text_area :comment, id: :reservation_comment, :class => "materialize-textarea" %>
+      </div>
+
+      <div class="actions">
+        <%= form.submit 'Speichern', :class => "waves-effect waves-light btn-large" %>
+      </div>
+    <% end %>
   </div>
-
-  <div class="field">
-    <%= form.label :Von %>
-    <%= form.text_field :start_date, id: :reservation_start_date, class: :datepicker %>
-  </div>
-
-  <div class="field">
-    <%= form.label :Bis %>
-    <%= form.text_field :end_date, id: :reservation_end_date, class: :datepicker %>
-  </div>
-
-  <div class="field">
-    <%= form.label :Kommentar %>
-    <%= form.text_area :comment, id: :reservation_comment, :class => "materialize-textarea" %>
-  </div>
-
-  <div class="actions">
-    <%= form.submit 'Speichern', :class => "waves-effect waves-light btn-large" %>
-  </div>
-<% end %>
+</div>

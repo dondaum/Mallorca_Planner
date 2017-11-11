@@ -28,7 +28,7 @@ class ReservationsController < ApplicationController
 
     respond_to do |format|
       if @reservation.save
-        format.html { redirect_to root_path, notice: 'Reservierung erfolgreich gespeichert.' }
+        format.html { redirect_to reservations_path, notice: 'Reservierung erfolgreich gespeichert.' }
         format.json { render :show, status: :created, location: @reservation }
       else
         format.html { render :new }
