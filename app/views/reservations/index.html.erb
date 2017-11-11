@@ -4,14 +4,14 @@
       <div class="card light-blue">
         <div class="card-content white-text">
           <span class="card-title"><%= reservation.title %></span>
-          <p>Von: <%= reservation.start_date %> </p>
-          <p>Bis:  <%= reservation.end_date %>  </p>
+          <p>Von: <%= reservation.start_date.strftime('%d.%m.%Y') %> </p>
+          <p>Bis:  <%= reservation.end_date.strftime('%d.%m.%Y') %>  </p>
           <p>Kommentar: <%= truncate(reservation.comment, length: 64) %>
         </div>
         <div class="card-action">
           <%= link_to 'Anzeigen', reservation %>
           <%= link_to 'Bearbeiten', edit_reservation_path(reservation) %>
-          <%= link_to 'Löschen', reservation, method: :delete, data: { confirm: 'Bist du sicheroku?' } %>
+          <%= link_to 'Löschen', reservation, method: :delete, data: { confirm: 'Bist du sicher?' } %>
         </div>
       </div>
     </div>
