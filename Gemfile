@@ -28,6 +28,8 @@ gem 'turbolinks', '~> 5'
 gem 'jquery-turbolinks', '~> 2.1'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
+# client side validation
+gem 'client_side_validations'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
@@ -43,6 +45,8 @@ group :development, :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
+  # using rspec for TDD instead of minitest
+  gem 'rspec-rails', '~> 3.6'
 end
 
 group :development do
@@ -60,3 +64,5 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+gem 'simplecov', require: false, group: :test
