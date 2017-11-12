@@ -16,12 +16,20 @@
 
 @import "materialize";
 @import "https://fonts.googleapis.com/icon?family=Material+Icons";
+@import "simple_calendar";
 
 
 #main {
   padding-top: 70px;
+  padding-bottom: 100px;
 }
 
+#toast-container {
+  top: auto !important;
+  right: auto !important;
+  left: auto !important;
+  bottom: 82%;
+}
 
 .hero-section {
 //  margin:1rem auto;
@@ -38,4 +46,41 @@
   vertical-align: middle;
   text-align: center;
   color: white;
+}
+
+.simple-calendar {
+
+
+  .day {
+    height: 80px;
+  }
+
+  .wday-0 {}
+  .wday-1 {}
+  .wday-2 {}
+  .wday-3 {}
+  .wday-4 {}
+  .wday-5 {}
+  .wday-6 {}
+
+  .today {
+    background: #FFFFC0
+  }
+
+  .past {}
+  .future {}
+
+  .start-date {}
+
+  .prev-month {
+    background: #DDD;
+  }
+  .next-month {
+    background: #DDD;
+  }
+  .current-month {}
+
+  .has-events {
+    background: #EE6E73;
+  }
 }

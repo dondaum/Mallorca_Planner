@@ -1,6 +1,7 @@
+<div class = "container">
+  <h1>Neue Reservierung speichern</h1>
 
-<h1>Neue Reservierung speichern</h1>
+  <%= render 'form', reservation: @reservation %>
 
-<%= render 'form', reservation: @reservation %>
-
-<%= link_to 'Zurück', reservations_path %>
+  <%= link_to 'Zurück', reservations_path %>
+</div>

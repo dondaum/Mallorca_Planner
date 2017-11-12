@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/home/sebastian/Rails-Pipeline/Mallorca_Planner/spec/controllers/reservations_controller_spec.rb": [
+      "/Users/sebastiandaum/Mallorca_Planner/spec/controllers/reservations_controller_spec.rb": [
         1,
         null,
         1,
@@ -26,7 +26,7 @@
         null,
         null
       ],
-      "/home/sebastian/Rails-Pipeline/Mallorca_Planner/spec/rails_helper.rb": [
+      "/Users/sebastiandaum/Mallorca_Planner/spec/rails_helper.rb": [
         null,
         1,
         1,
@@ -85,14 +85,14 @@
         null,
         null
       ],
-      "/home/sebastian/Rails-Pipeline/Mallorca_Planner/config/environment.rb": [
+      "/Users/sebastiandaum/Mallorca_Planner/config/environment.rb": [
         null,
         1,
         null,
         null,
         1
       ],
-      "/home/sebastian/Rails-Pipeline/Mallorca_Planner/config/application.rb": [
+      "/Users/sebastiandaum/Mallorca_Planner/config/application.rb": [
         1,
         null,
         1,
@@ -112,12 +112,12 @@
         null,
         null
       ],
-      "/home/sebastian/Rails-Pipeline/Mallorca_Planner/config/boot.rb": [
+      "/Users/sebastiandaum/Mallorca_Planner/config/boot.rb": [
         1,
         null,
         1
       ],
-      "/home/sebastian/Rails-Pipeline/Mallorca_Planner/config/environments/test.rb": [
+      "/Users/sebastiandaum/Mallorca_Planner/config/environments/test.rb": [
         1,
         null,
         null,
@@ -161,7 +161,7 @@
         null,
         null
       ],
-      "/home/sebastian/Rails-Pipeline/Mallorca_Planner/config/initializers/application_controller_renderer.rb": [
+      "/Users/sebastiandaum/Mallorca_Planner/config/initializers/application_controller_renderer.rb": [
         null,
         null,
         null,
@@ -171,7 +171,7 @@
         null,
         null
       ],
-      "/home/sebastian/Rails-Pipeline/Mallorca_Planner/config/initializers/assets.rb": [
+      "/Users/sebastiandaum/Mallorca_Planner/config/initializers/assets.rb": [
         null,
         null,
         null,
@@ -187,7 +187,7 @@
         null,
         null
       ],
-      "/home/sebastian/Rails-Pipeline/Mallorca_Planner/config/initializers/backtrace_silencers.rb": [
+      "/Users/sebastiandaum/Mallorca_Planner/config/initializers/backtrace_silencers.rb": [
         null,
         null,
         null,
@@ -196,7 +196,7 @@
         null,
         null
       ],
-      "/home/sebastian/Rails-Pipeline/Mallorca_Planner/config/initializers/client_side_validations.rb": [
+      "/Users/sebastiandaum/Mallorca_Planner/config/initializers/client_side_validations.rb": [
         null,
         null,
         null,
@@ -219,20 +219,20 @@
         null,
         null
       ],
-      "/home/sebastian/Rails-Pipeline/Mallorca_Planner/config/initializers/cookies_serializer.rb": [
+      "/Users/sebastiandaum/Mallorca_Planner/config/initializers/cookies_serializer.rb": [
         null,
-        null,
-        null,
-        null,
-        1
-      ],
-      "/home/sebastian/Rails-Pipeline/Mallorca_Planner/config/initializers/filter_parameter_logging.rb": [
         null,
         null,
         null,
         1
       ],
-      "/home/sebastian/Rails-Pipeline/Mallorca_Planner/config/initializers/inflections.rb": [
+      "/Users/sebastiandaum/Mallorca_Planner/config/initializers/filter_parameter_logging.rb": [
+        null,
+        null,
+        null,
+        1
+      ],
+      "/Users/sebastiandaum/Mallorca_Planner/config/initializers/inflections.rb": [
         null,
         null,
         null,
@@ -250,13 +250,13 @@
         null,
         null
       ],
-      "/home/sebastian/Rails-Pipeline/Mallorca_Planner/config/initializers/mime_types.rb": [
+      "/Users/sebastiandaum/Mallorca_Planner/config/initializers/mime_types.rb": [
         null,
         null,
         null,
         null
       ],
-      "/home/sebastian/Rails-Pipeline/Mallorca_Planner/config/initializers/wrap_parameters.rb": [
+      "/Users/sebastiandaum/Mallorca_Planner/config/initializers/wrap_parameters.rb": [
         null,
         null,
         null,
@@ -272,42 +272,36 @@
         null,
         null
       ],
-      "/home/sebastian/Rails-Pipeline/Mallorca_Planner/config/routes.rb": [
+      "/Users/sebastiandaum/Mallorca_Planner/config/routes.rb": [
         1,
         null,
         1,
         null,
+        null,
         1,
         1,
+        1,
+        null,
         null,
         null,
         null,
         null
       ],
-      "/home/sebastian/Rails-Pipeline/Mallorca_Planner/app/helpers/application_helper.rb": [
+      "/Users/sebastiandaum/Mallorca_Planner/app/helpers/application_helper.rb": [
         1,
         null
       ],
-      "/home/sebastian/Rails-Pipeline/Mallorca_Planner/app/helpers/reservations_helper.rb": [
+      "/Users/sebastiandaum/Mallorca_Planner/app/helpers/reservations_helper.rb": [
         1,
         null
       ],
-      "/home/sebastian/Rails-Pipeline/Mallorca_Planner/app/helpers/welcome_helper.rb": [
+      "/Users/sebastiandaum/Mallorca_Planner/app/helpers/welcome_helper.rb": [
         1,
         null
       ],
-      "/home/sebastian/Rails-Pipeline/Mallorca_Planner/app/controllers/reservations_controller.rb": [
+      "/Users/sebastiandaum/Mallorca_Planner/app/controllers/reservations_controller.rb": [
         1,
         1,
-        null,
-        null,
-        null,
-        1,
-        0,
-        null,
-        null,
-        null,
-        null,
         1,
         null,
         null,
@@ -317,6 +311,16 @@
         null,
         null,
         null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        null,
         1,
         null,
         null,
@@ -325,20 +329,6 @@
         1,
         0,
         null,
-        0,
-        0,
-        0,
-        0,
-        null,
-        0,
-        0,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        1,
         0,
         0,
         0,
@@ -358,6 +348,24 @@
         0,
         0,
         null,
+        0,
+        0,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        0,
+        null,
+        null,
+        null,
+        1,
+        0,
         null,
         null,
         1,
@@ -372,12 +380,12 @@
         null,
         null
       ],
-      "/home/sebastian/Rails-Pipeline/Mallorca_Planner/app/controllers/application_controller.rb": [
+      "/Users/sebastiandaum/Mallorca_Planner/app/controllers/application_controller.rb": [
         1,
         1,
         null
       ],
-      "/home/sebastian/Rails-Pipeline/Mallorca_Planner/spec/models/reservation_spec.rb": [
+      "/Users/sebastiandaum/Mallorca_Planner/spec/models/reservation_spec.rb": [
         1,
         null,
         1,
@@ -424,7 +432,7 @@
         null,
         null
       ],
-      "/home/sebastian/Rails-Pipeline/Mallorca_Planner/app/models/reservation.rb": [
+      "/Users/sebastiandaum/Mallorca_Planner/app/models/reservation.rb": [
         1,
         null,
         1,
@@ -443,12 +451,12 @@
         null,
         null
       ],
-      "/home/sebastian/Rails-Pipeline/Mallorca_Planner/app/models/application_record.rb": [
+      "/Users/sebastiandaum/Mallorca_Planner/app/models/application_record.rb": [
         1,
         1,
         null
       ]
     },
-    "timestamp": 1510251808
+    "timestamp": 1510504533
   }
 }

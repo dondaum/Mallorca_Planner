@@ -1,10 +1,11 @@
 class ReservationsController < ApplicationController
   before_action :set_reservation, only: [:show, :edit, :update, :destroy]
+  layout 'application_reservation'
 
   # GET /reservations
   # GET /reservations.json
   def index
-    @reservations = Reservation.all
+    @reservations = Reservation.order("created_at DESC").all
   end
 
   # GET /reservations/1
@@ -59,6 +60,10 @@ class ReservationsController < ApplicationController
       format.html { redirect_to reservations_url, notice: 'Reservierung erfolgreich gelöscht.' }
       format.json { head :no_content }
     end
+  end
+
+  def calendar
+    @reservations = Reservation.all
   end
 
   private

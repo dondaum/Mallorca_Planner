@@ -10,12 +10,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171014102213) do
+ActiveRecord::Schema.define(version: 20171112163402) do
 
   create_table "reservations", force: :cascade do |t|
     t.string "title"
-    t.date "start_date"
-    t.date "end_date"
+    t.datetime "start_date"
+    t.datetime "end_date"
     t.text "comment"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

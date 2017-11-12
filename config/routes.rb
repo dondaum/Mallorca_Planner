@@ -5,7 +5,7 @@ Rails.application.routes.draw do
 
   root to: 'welcome#index'
   get 'reservations', to: 'reservations#index'
-
+  get 'calendar'    , to: 'reservations#calendar'
 
 
 
