@@ -37,6 +37,8 @@ $( document ).on('turbolinks:load', function() {
       Materialize.toast('Pump it up hard!', 3000, 'red')
   });
 
+  $('.modal').modal();
+
 
   // Configure and load calendar
 
