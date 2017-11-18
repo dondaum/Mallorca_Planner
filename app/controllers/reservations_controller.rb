@@ -64,7 +64,9 @@ class ReservationsController < ApplicationController
 
   def calendar
     @reservations = Reservation.all
+
   end
+
 
   private
     # Use callbacks to share common setup or constraints between actions.

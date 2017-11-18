@@ -13,6 +13,8 @@
 //= require jquery
 //= require jquery.turbolinks
 //= require jquery_ujs
+//= require moment
+//= require fullcalendar
 //= require materialize-sprockets
 //= require turbolinks
 //= require rails.validations
@@ -33,6 +35,21 @@ $( document ).on('turbolinks:load', function() {
 
   $('#something').click(function(){
       Materialize.toast('Pump it up hard!', 3000, 'red')
+  });
+
+
+  // Configure and load calendar
+
+  $('#calendar').fullCalendar({
+
+    header: {
+    left: 'prev,next today myCustomButton',
+    center: 'title',
+    right: 'month,agendaWeek,agendaDay'
+    },
+    eventLimit: true,
+    events: '/reservations.json',
+
   });
 
 

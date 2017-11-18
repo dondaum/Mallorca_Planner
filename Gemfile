@@ -31,7 +31,8 @@ gem 'jbuilder', '~> 2.5'
 # client side validation
 gem 'client_side_validations'
 # calender gem
-gem "simple_calendar", "~> 2.0"
+gem 'fullcalendar-rails'
+gem 'momentjs-rails'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
