@@ -6,7 +6,6 @@ if Rails.env.development? or Rails.env.test?
 
 else
   CarrierWave.configure do |config|
-    config.storage :fog
     config.fog_provider = 'fog/aws'
     config.fog_credentials = {
         provider:              'AWS',
@@ -14,6 +13,7 @@ else
         aws_secret_access_key: ENV["aws_access_secret_key"],
         region: 'us-east-1'
     }
+    config.storage :fog
     config.fog_directory  = "mallorca-planner"
     config.fog_public     = false
   end
