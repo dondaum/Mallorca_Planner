@@ -6,11 +6,11 @@
         <div class="card">
           <div class="card-image">
             <img src="https://static.pexels.com/photos/386025/pexels-photo-386025.jpeg">
-            <span class="card-title"><%= truncate(reservation.title, length: 25) %></span>
+            <span class="card-title"><%= truncate(reservation.user.username, length: 25) %></span>
             <%= link_to '<i class="material-icons">add</i>'.html_safe, reservation, :class => "btn-floating halfway-fab waves-effect waves-light red" %>
           </div>
           <div class="card-content">
-            <p><%= truncate(reservation.comment, length: 64) %></p>
+            <p><%= truncate(reservation.title, length: 64) %></p>
           </div>
           <div class="card-action">
             <%= link_to 'Anzeigen', reservation %>

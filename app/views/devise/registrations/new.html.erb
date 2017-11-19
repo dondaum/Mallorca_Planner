@@ -1,0 +1,43 @@
+<div class = "container" id ="devise">
+  <h3>Registrieren</h3>
+
+  <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+    <%= devise_error_messages! %>
+
+    <div class="field">
+      <%= f.label :Email %><br />
+      <%= f.email_field :email, autofocus: true %>
+    </div>
+
+    <div class="field">
+      <%= f.label :Benutzername %><br />
+      <%= f.text_field :username, autofocus: true %>
+    </div>
+
+    <div class="field">
+      <%= f.label :Anmeldeschlüssel %>
+      <em>(Anmeldeschlüssel notwendig, um sich registrieren zu können.)</em>
+      <br />
+      <%= f.text_field :key, autofocus: true %>
+    </div>
+
+    <div class="field">
+      <%= f.label :passwort %>
+      <% if @minimum_password_length %>
+      <em>(<%= @minimum_password_length %> Ziffern Minimum)</em>
+      <% end %><br />
+      <%= f.password_field :password, autocomplete: "off" %>
+    </div>
+
+    <div class="field">
+      <%= f.label :passwort_Bestätigen %><br />
+      <%= f.password_field :password_confirmation, autocomplete: "off" %>
+    </div>
+
+    <div class="actions">
+      <%= f.submit "Jetzt registrieren" , class: "waves-effect waves-light btn-large"%>
+    </div>
+  <% end %>
+
+  <%= render "devise/shared/links" %>
+</div>

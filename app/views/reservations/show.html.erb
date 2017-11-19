@@ -4,6 +4,10 @@
 <div class = "container">
   <ul class="collapsible" data-collapsible="accordion">
     <li>
+      <div class="collapsible-header"><i class="material-icons">face</i>Reservierung von</div>
+      <div class="collapsible-body"><span><%= @reservation.user.username %></span></div>
+    </li>
+    <li>
       <div class="collapsible-header"><i class="material-icons">short_text</i>Titel</div>
       <div class="collapsible-body"><span><%= @reservation.title %></span></div>
     </li>
