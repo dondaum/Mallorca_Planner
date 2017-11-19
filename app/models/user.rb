@@ -7,5 +7,5 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :trackable, :validatable
 
   validates :username, :presence => true, :uniqueness => true
-  validates :key, :presence => true, acceptance: { accept: 'Kyffhäuserstraße10' }
+  validates :key, :presence => true, acceptance: { accept: Figaro.env.secret_registration_key }
 end
