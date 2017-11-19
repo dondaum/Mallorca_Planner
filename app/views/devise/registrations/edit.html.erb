@@ -32,6 +32,16 @@
       <%= f.password_field :password_confirmation, autocomplete: "off" %>
     </div>
 
+    <% if current_user.avatar.url.present? %>
+      <p> Benutzerbild </p>
+      <%= image_tag(current_user.avatar.url, class: "responsive-img") %>
+      <%= f.label :remove_avatar do %>
+        <%= f.check_box :remove_avatar %>
+      <% end %>
+    <% end %>
+    <%= f.file_field :avatar %>
+    <%= f.hidden_field :avatar_cache %>
+
     <div class="field">
       <%= f.label :current_password %> <i>(Wir brauchen dein aktuelles Passwort um die Änderungen zu speichern.)</i><br />
       <%= f.password_field :current_password, autocomplete: "off" %>

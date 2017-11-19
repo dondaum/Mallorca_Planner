@@ -37,6 +37,10 @@ gem 'momentjs-rails'
 gem 'devise'
 # add digaro for managing secret keys
 gem "figaro"
+# gem carrierwave for easy image uploading
+gem 'carrierwave', '~> 1.0'
+# configure aws access s3 buckets
+gem "fog-aws"
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password

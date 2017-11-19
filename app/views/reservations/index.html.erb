@@ -5,7 +5,7 @@
       <div class="col s12 m6">
         <div class="card">
           <div class="card-image">
-            <img src="https://static.pexels.com/photos/386025/pexels-photo-386025.jpeg">
+            <%= image_tag(current_user.avatar.url) %>
             <span class="card-title"><%= truncate(reservation.user.username, length: 25) %></span>
             <%= link_to '<i class="material-icons">add</i>'.html_safe, reservation, :class => "btn-floating halfway-fab waves-effect waves-light red" %>
           </div>
