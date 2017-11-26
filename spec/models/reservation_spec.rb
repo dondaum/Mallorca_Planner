@@ -31,12 +31,6 @@ RSpec.describe Reservation, type: :model do
       expect(subject).to_not be_valid
     end
 
-    it 'ensures comment presence' do
-      subject.comment = nil
-
-      expect(subject).to_not be_valid
-    end
-
     it 'should save successfully' do
 
       expect(subject).to be_valid

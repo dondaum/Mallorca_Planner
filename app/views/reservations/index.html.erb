@@ -11,6 +11,7 @@
           </div>
           <div class="card-content">
             <p><%= truncate(reservation.title, length: 64) %></p>
+            <p><%= reservation.start_date.strftime("%d.%m.%Y") %> -<%= reservation.end_date.strftime("%d.%m.%Y") %> </p>
           </div>
           <div class="card-action">
             <%= link_to 'Anzeigen', reservation %>
