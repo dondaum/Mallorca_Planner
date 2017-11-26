@@ -15,12 +15,13 @@
     </div>
 
     <div class="field">
-      <%= f.label :avatar do %>
+      <label>Benutzerbild</label><em>(Avatarbild ist notwendig.)</em><br />
+      <%= f.label :Benutzerbild do %>
       <%= f.file_field :avatar %>
       <%= f.hidden_field :avatar_cache %>
     <% end %>
     </div>
-
+    <br />
     <div class="field">
       <%= f.label :Anmeldeschlüssel %>
       <em>(Anmeldeschlüssel notwendig, um sich registrieren zu können.)</em>

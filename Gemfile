@@ -28,13 +28,13 @@ gem 'turbolinks', '~> 5'
 gem 'jquery-turbolinks', '~> 2.1'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
-# client side validation
-gem 'client_side_validations'
 # calender gem
 gem 'fullcalendar-rails'
 gem 'momentjs-rails'
 # devise for user model
 gem 'devise'
+gem 'rails-i18n'
+gem 'devise-i18n'
 # add digaro for managing secret keys
 gem "figaro"
 # gem carrierwave for easy image uploading
