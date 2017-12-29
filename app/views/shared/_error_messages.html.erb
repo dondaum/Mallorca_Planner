@@ -1,7 +1,7 @@
 <% if @reservation.errors.any? %>
   <div id="error_explanation">
     <div class="alert alert-danger">
-      <h4>Das Formular enthält <%= pluralize(@reservation.errors.count, "Fehler") %>.</h4>
+      <h4><b>Das Formular enthält <%= pluralize(@reservation.errors.count, "Fehler") %>.</b></h4>
     </div>
     <ul>
     <% @reservation.errors.full_messages.each do |msg| %>
