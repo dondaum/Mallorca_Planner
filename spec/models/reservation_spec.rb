@@ -1,10 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe Reservation, type: :model do
-  subject { Reservation.new(title: 'First', start_date: Date.today,
-                                end_date:   Date.today + 1.day, comment: 'Test 1')
-
-  }
+  subject { FactoryBot.create(:reservation)}
 
   context 'validation tests' do
     it 'ensures title presence' do
