@@ -11,13 +11,19 @@ FactoryBot.define do
     password "test12345"
     password_confirmation "test12345"
 
+    factory :user_with_reservation do
+      after(:create) do |user|
+        create(:reservation, user: user)
+      end
+    end
+
   end
 
  # not used the random user before. Does this Faker avatar image works?
   factory :random_user, class: User do
     email { Faker::Internet.safe_email }
     key Figaro.env.secret_registration_key
-    avatar Faker::Avatar.image
+    avatar { Rack::Test::UploadedFile.new(Faker::Avatar.image) }
     username Faker::Hobbit.character
     password "testtest"
     password_confirmation "testtest"
