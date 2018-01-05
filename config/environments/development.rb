@@ -26,8 +26,25 @@ Rails.application.configure do
     config.cache_store = :null_store
   end
 
-  # Don't care if the mailer can't send.
-  config.action_mailer.raise_delivery_errors = false
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.default_url_options = { host: 'localhost:3000' }
+  # using the mailcatcher local smtp server for testing purposes
+  config.action_mailer.smtp_settings = {
+    :address => "localhost",
+    :port => 1025
+  }
+
+  #   ActionMailer::Base.smtp_settings = {
+  #   :user_name => Figaro.env.sendgrid_username,
+  #   :password => Figaro.env.sendgrid_password,
+  # #  :domain => 'yourdomain.com',
+  #   :address => 'smtp.sendgrid.net',
+  #   :port => 587,
+  #   :authentication => :plain,
+  #   :enable_starttls_auto => true
+  # }
+
 
   config.action_mailer.perform_caching = false
 

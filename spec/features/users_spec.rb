@@ -80,8 +80,25 @@ RSpec.describe 'Users Features', type: :feature do
         expect(page).to have_content 'Ihr Account wurde gelöscht.'
       end
 
-  end
+    end
 
+    context 'passwort reset' do
 
-#Key muss akzeptiert werden
+      before(:each) do
+        @user = FactoryBot.create(:random_user)
+      end
+
+      scenario 'user should receive an email and successfully reset password', js: :true do
+
+        visit new_user_password_path
+        within("form#new_user") do
+          fill_in 'user_email', with: @user.email
+        end
+        click_button 'Sende mir Passwort Instruktionen'
+
+        expect(page).to have_text 'Sie erhalten in wenigen Minuten eine E-Mail mit der Anleitung, wie Sie Ihr Passwort zurücksetzen können.'
+
+      end
+    end
+
 end

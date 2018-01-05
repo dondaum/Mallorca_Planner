@@ -23,7 +23,7 @@ FactoryBot.define do
   factory :random_user, class: User do
     email { Faker::Internet.safe_email }
     key Figaro.env.secret_registration_key
-    avatar { Rack::Test::UploadedFile.new(Faker::Avatar.image) }
+    avatar { Rack::Test::UploadedFile.new(Rails.root.join('spec', 'support', 'images', 'test.jpg'), 'image/jpeg') }
     username Faker::Hobbit.character
     password "testtest"
     password_confirmation "testtest"
