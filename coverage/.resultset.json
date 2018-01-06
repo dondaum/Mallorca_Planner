@@ -196,6 +196,9 @@
         1,
         1,
         null,
+        null,
+        1,
+        null,
         1,
         1,
         1,
@@ -620,6 +623,11 @@
         null,
         null
       ],
+      "/Users/sebastiandaum/Mallorca_Planner/config/initializers/devise_async.rb": [
+        null,
+        null,
+        null
+      ],
       "/Users/sebastiandaum/Mallorca_Planner/config/initializers/filter_parameter_logging.rb": [
         null,
         null,
@@ -648,6 +656,15 @@
         null,
         null,
         null,
+        null
+      ],
+      "/Users/sebastiandaum/Mallorca_Planner/config/initializers/sidekiq.rb": [
+        1,
+        0,
+        null,
+        null,
+        1,
+        1,
         null
       ],
       "/Users/sebastiandaum/Mallorca_Planner/config/initializers/storage.rb": [
@@ -813,6 +830,10 @@
         null,
         1,
         null,
+        1,
+        null,
+        null,
+        1,
         1,
         null,
         null,
@@ -1173,10 +1194,8 @@
         1,
         null,
         1,
-        null,
         1,
         1,
-        null,
         null,
         1,
         null,
@@ -1260,33 +1279,6 @@
         1,
         null
       ],
-      "/Users/sebastiandaum/Mallorca_Planner/app/controllers/users/sessions_controller.rb": [
-        1,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
-      ],
       "/Users/sebastiandaum/Mallorca_Planner/app/controllers/users/registrations_controller.rb": [
         1,
         null,
@@ -1353,8 +1345,35 @@
         null,
         null,
         null
+      ],
+      "/Users/sebastiandaum/Mallorca_Planner/app/controllers/users/sessions_controller.rb": [
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
       ]
     },
-    "timestamp": 1515170469
+    "timestamp": 1515258569
   }
 }

@@ -4,6 +4,10 @@ Rails.application.routes.draw do
 
   resources :reservations
 
+  #sidekiq
+  require 'sidekiq/web'
+  mount Sidekiq::Web => '/sidekiq'
+
 
   root to: 'welcome#index'
   get 'reservations', to: 'reservations#index'

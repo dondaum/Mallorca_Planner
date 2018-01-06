@@ -11,6 +11,9 @@ module MallorcaPlanner
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.1
     config.i18n.default_locale = :de
+    
+    # using sidekiq for background processing in combination with active job
+    config.active_job.queue_adapter = :sidekiq
 
     config.action_view.field_error_proc = Proc.new { |html_tag, instance|
       if html_tag =~ /<(input|label|textarea|select)/
