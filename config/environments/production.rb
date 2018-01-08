@@ -30,6 +30,20 @@ Rails.application.configure do
   # Do not fallback to assets pipeline if a precompiled asset is missed.
   config.assets.compile = true
 
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.default_url_options = { host: 'powerful-inlet-34228.herokuapp.com' }
+
+    ActionMailer::Base.smtp_settings = {
+    :user_name => Figaro.env.sendgrid_username,
+    :password => Figaro.env.sendgrid_password,
+  #  :domain => 'yourdomain.com',
+    :address => 'smtp.sendgrid.net',
+    :port => 587,
+    :authentication => :plain,
+    :enable_starttls_auto => true
+  }
+
   # `config.assets.precompile` and `config.assets.version` have moved to config/initializers/assets.rb
 
   # Enable serving of images, stylesheets, and JavaScripts from an asset server.
