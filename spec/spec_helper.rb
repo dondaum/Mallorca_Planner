@@ -1,5 +1,6 @@
 require 'simplecov'
 require 'capybara/rspec'
+ENV['RAILS_ENV'] ||= 'test'
 
 SimpleCov.start
 
@@ -45,7 +46,7 @@ RSpec.configure do |config|
   config.after(:all) do
     # Get rid of the linked images
     if Rails.env.test? || Rails.env.cucumber?
-      FileUtils.rm_rf(Dir["#{Rails.root}/public/uploads/temp/[^.]*"])
+      FileUtils.rm_rf(Dir["#{Rails.root}/public/uploads/tmp/[^.]*"])
     end
   end
 
