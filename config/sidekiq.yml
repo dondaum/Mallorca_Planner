@@ -1,8 +1,12 @@
+:verbose: false
+:concurrency: 10
+:pidfile: tmp/pids/sidekiq.pid
 :queues:
+  - [critical, 2]
   - [mailer, 2]
   - [default, 1]
 
-  
+
 production:
   :concurrency: 25
 
