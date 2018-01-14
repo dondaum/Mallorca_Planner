@@ -13,7 +13,7 @@
 
 
 production:
-  :concurrency: 10
+  :concurrency: 5
 
 staging:
   :concurrency: 15
