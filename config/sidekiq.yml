@@ -1,9 +1,15 @@
 :verbose: false
 :concurrency: 10
+
+
+# Set timeout to 8 on Heroku, longer if you manage your own systems.
+:timeout: 8
+
+
 :queues:
-  - [critical, 2]
-  - [mailer, 2]
-  - [default, 1]
+  - critical
+  - mailer
+  - default
 
 
 production:
