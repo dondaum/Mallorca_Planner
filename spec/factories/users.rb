@@ -19,6 +19,7 @@ FactoryBot.define do
 
   end
 
+
  # not used the random user before. Does this Faker avatar image works?
   factory :random_user, class: User do
     email { Faker::Internet.safe_email }

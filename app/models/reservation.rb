@@ -13,14 +13,22 @@ class Reservation < ApplicationRecord
     if end_date < start_date
       errors.add(:end_date, "must be after the start date")
     end
-   end
+  end
 
-   def start_time
+  def start_time
         self.start_date
-   end
+  end
 
-   def end_time
+  def end_time
         self.end_date
-   end
+  end
+
+
+
+  # list all scope
+  scope :order_descending, -> { order(created_at: :desc) }
+
+
+
 
 end
